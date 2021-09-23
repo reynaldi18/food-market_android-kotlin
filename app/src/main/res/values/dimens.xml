@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="space">@dimen/_4sdp</dimen>
+    <dimen name="content">@dimen/_12sdp</dimen>
+    <dimen name="content_padding">@dimen/_20sdp</dimen>
+    <dimen name="content_small">@dimen/_8sdp</dimen>
+    <dimen name="content_big">32dp</dimen>
+    <dimen name="content_otp">36dp</dimen>
+    <dimen name="content_placeholder">64dp</dimen>
+    <dimen name="content_landing">64dp</dimen>
+    <dimen name="content_button">12dp</dimen>
+    <dimen name="content_search">48dp</dimen>
+    <dimen name="space_small">4dp</dimen>
+    <dimen name="space_big">12dp</dimen>
+    <dimen name="button_radius">@dimen/_6sdp</dimen>
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_radius_big">32dp</dimen>
+    <dimen name="card_radius_small">8dp</dimen>
+    <dimen name="button_radius_small">6dp</dimen>
+
+    <!-- Font sizes -->
+    <dimen name="text_xxs">@dimen/_4sdp</dimen>
+    <dimen name="text_xs">@dimen/_6sdp</dimen>
+    <dimen name="text_s">@dimen/_8sdp</dimen>
+    <dimen name="text">@dimen/_10sdp</dimen>
+    <dimen name="text_l">@dimen/_12sdp</dimen>
+    <dimen name="text_xl">@dimen/_14sdp</dimen>
+    <dimen name="text_xxl">@dimen/_18sdp</dimen>
+
+    <dimen name="text_balance">@dimen/text_xl</dimen>
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_headline_small">@dimen/text_l</dimen>
+    <dimen name="text_headline_medium">@dimen/text_xl</dimen>
+    <dimen name="text_headline_big">28sp</dimen>
+    <dimen name="text_subtitle">@dimen/text_s</dimen>
+    <dimen name="text_overline">@dimen/text_xs</dimen>
+    <dimen name="text_overline_small">8sp</dimen>
+    <dimen name="text_label">@dimen/text_l</dimen>
+    <dimen name="text_label_small">8sp</dimen>
+    <dimen name="text_body">@dimen/text</dimen>
+    <dimen name="text_caption">@dimen/text_s</dimen>
+    <dimen name="text_input">@dimen/text</dimen>
+    <dimen name="text_toolbar_title">@dimen/_18sdp</dimen>
+    <dimen name="text_toolbar_subtitle">@dimen/_10sdp</dimen>
+
+    <dimen name="logo_app">@dimen/_96sdp</dimen>
+    <dimen name="thumbnail_placeholder">48dp</dimen>
+    <dimen name="icon_boarding_width">164dp</dimen>
+    <dimen name="icon_boarding_height">48dp</dimen>
+    <dimen name="toolbar_height">@dimen/_104sdp</dimen>
+    <dimen name="space_input">@dimen/_104sdp</dimen>
+</resources>

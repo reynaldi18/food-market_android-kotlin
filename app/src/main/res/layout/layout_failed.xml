@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="text"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_failed"
+        style="@style/Clickable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/content_big"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/thumbnail_placeholder"
+            android:layout_height="@dimen/thumbnail_placeholder"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_restore_page"
+            app:tint="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="5dp"
+            android:text="@{text!=null &amp;&amp; text!=``? text: @string/error_common}"
+            android:textColor="@color/colorPrimary"
+            tools:text="@string/error_common" />
+    </LinearLayout>
+</layout>
+

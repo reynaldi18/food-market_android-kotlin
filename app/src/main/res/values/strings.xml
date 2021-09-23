@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">FoodMarket</string>
+    <string name="channel_id">foodMarketChannel</string>
+    <string name="channel_name">General</string>
+    <string name="channel_description">General notification for the apps</string>
+    <string name="error_common">Terjadi kesalahan harap coba lagi</string>
+    <string name="error_not_connection">Tidak ada koneksi internet</string>
+    <string name="image_logo">Logo</string>
+    <string name="image_placeholder">Placeholder</string>
+    <string name="image_indicator">Indicator</string>
+
+    <!--Allowed digits-->
+    <string name="digit_input">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890, .@#$%^*()"':;!?/\|</string>
+    <string name="digit_no_separator">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789 0</string>
+    <string name="digit_phone">1234567890</string>
+    <string name="digit_account">1234567890</string>
+    <string name="digit_nominal">1234567890</string>
+    <string name="digit_rate">1234567890.</string>
+    <string name="digit_name">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY Z</string>
+    <string name="digit_email">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@._</string>
+    <string name="digit_password">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&amp;*()`~-_=+[{]}|;:\'"/?.&gt;,&lt;</string>
+
+    <!--Value-->
+    <string name="value_navigate_to_partner">Kunjungi %s</string>
+
+    <!--Messages-->
+    <string name="message_please_wait">Harap tunggu…</string>
+    <string name="message_no_data">Belum ada data</string>
+    <string name="message_rationale_permission_image">Untuk melakukan pengambilan gambar, harap izinkan penggunaan kamera dan penyimpanan di halaman
+        pengaturan sistem.</string>
+    <string name="message_permission_image">Dibutuhkan permisi untuk mengambil gambar</string>
+
+    <!--Error-->
+    <string name="error_empty_phone">Harap isi nomor handphone</string>
+    <string name="error_empty_location">Harap tentukan lokasi terlebih dahulu</string>
+
+    <!--Hint-->
+    <string name="hint_email">Type your email address</string>
+    <string name="hint_password">Type your password</string>
+    <string name="hint_full_name">Type your full name</string>
+
+    <!--Actions-->
+    <string name="action_next">Selanjutnya</string>
+    <string name="action_sign_up">Create New Account</string>
+    <string name="action_continue">Continue</string>
+
+    <!--Label-->
+    <string name="label_home">Home</string>
+    <string name="label_orders">Order</string>
+    <string name="label_profile">Profile</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="label_sign_up">Sign Up</string>
+    <string name="label_sign_in_desc">Find your best ever meal</string>
+    <string name="label_sign_up_desc">Register and eat</string>
+    <string name="label_email_address">Email Address</string>
+    <string name="label_password">Password</string>
+    <string name="label_full_name">Full Name</string>
+</resources>

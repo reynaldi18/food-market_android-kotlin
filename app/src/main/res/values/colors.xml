@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC700</color>
+    <color name="colorPrimaryDark">#FFB600</color>
+    <color name="colorAccent">#FCD94E</color>
+    <color name="transparent">#00000000</color>
+    <color name="cancel">#D9435E</color>
+    <color name="error">@color/cancel</color>
+    <color name="warning">#FDF3F3</color>
+    <color name="divider">#DDDDDD</color>
+    <color name="line">#EFEFEF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_darker">#f2f2f2</color>
+    <color name="white_20">#CCFFFFFF</color>
+    <color name="gray">#8D92A3</color>
+    <color name="gray_soft">#EFEFEF</color>
+    <color name="gray_dark">#767474</color>
+    <color name="black">#020202</color>
+    <color name="black_soft">#454545</color>
+    <color name="green">#01A876</color>
+    <color name="blue">#3DA5D9</color>
+    <color name="orange">#FF7300</color>
+    <color name="overlay">#EFEFEF</color>
+    <color name="red">#99DE0000</color>
+
+    <color name="bg">@color/white</color>
+    <color name="bg_app">#F0F0F0</color>
+    <color name="bg_logout">#0DDE0000</color>
+    <color name="bg_store">@color/line</color>
+    <color name="bg_toolbar_home">#44000000</color>
+    <color name="bg_upload">@color/white_darker</color>
+    <color name="text">@color/black_soft</color>
+    <color name="label">@color/black</color>
+    <color name="input">#E1E1E1</color>
+    <color name="hint">#8D92A3</color>
+    <color name="badge">@color/orange</color>
+    <color name="online">@color/green</color>
+    <color name="label_process">#4DFFC8C8</color>
+    <color name="label_finish">#2601A876</color>
+    <color name="label_primary">#4DFFC82C</color>
+    <color name="message_empty_search">#998E8E8E</color>
+    <color name="colorShimmer">#dddddd</color>
+
+    <color name="toggle_hover">@color/colorPrimary</color>
+    <color name="toggle_normal">@color/white</color>
+    <color name="toggle_active">@color/colorPrimaryDark</color>
+    <color name="toggle_normal_off">@color/white_20</color>
+</resources>

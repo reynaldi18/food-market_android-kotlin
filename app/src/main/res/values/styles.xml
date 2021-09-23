@@ -1,0 +1,233 @@
+<resources>
+    <!--Button-->
+    <style name="Button">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingTop">@dimen/content_button</item>
+        <item name="android:paddingBottom">@dimen/content_button</item>
+        <item name="android:paddingStart">@dimen/content_button</item>
+        <item name="android:paddingEnd">@dimen/content_button</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/bg_button_radius</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="Button.Small">
+        <item name="android:paddingTop">@dimen/space</item>
+        <item name="android:paddingBottom">@dimen/space</item>
+    </style>
+
+    <style name="Button.Gray">
+        <item name="backgroundTint">@color/gray</item>
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.Search">
+        <item name="android:background">@drawable/bg_button_search</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Button.Border">
+        <item name="android:background">@drawable/bg_border</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Button.Border.Small">
+        <item name="android:paddingTop">@dimen/space</item>
+        <item name="android:paddingBottom">@dimen/space</item>
+    </style>
+
+    <style name="Button.Border.White">
+        <item name="android:background">@drawable/bg_border_white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.Border.Rejected">
+        <item name="android:background">@drawable/bg_border_cancel</item>
+        <item name="android:textColor">@color/cancel</item>
+    </style>
+
+    <style name="Button.Border.Green">
+        <item name="android:background">@drawable/bg_border_green</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="Clickable">
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!--Text-->
+    <style name="Text">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="Text.Headline">
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.HeadlineBig">
+        <item name="android:textSize">@dimen/text_headline_big</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.HeadlineMedium">
+        <item name="android:textSize">@dimen/text_headline_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.HeadlineSmall">
+        <item name="android:textSize">@dimen/text_headline_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Headline.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Subtitle">
+        <item name="android:textSize">@dimen/text_subtitle</item>
+    </style>
+
+    <style name="Text.Subtitle.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Overline">
+        <item name="android:textSize">@dimen/text_overline</item>
+    </style>
+
+    <style name="Text.OverlineSmall">
+        <item name="android:textSize">@dimen/text_overline_small</item>
+    </style>
+
+    <style name="Text.Label">
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="Text.Body">
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
+
+    <style name="Text.Caption">
+        <item name="android:textSize">@dimen/text_caption</item>
+    </style>
+
+    <style name="Text.Toolbar">
+        <item name="android:textSize">@dimen/text_toolbar_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Toolbar.Subtitle">
+        <item name="android:textSize">@dimen/text_toolbar_subtitle</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Input-->
+    <style name="Input" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_input_radius</item>
+        <item name="android:paddingStart">@dimen/content</item>
+        <item name="android:paddingEnd">@dimen/content</item>
+        <item name="android:paddingTop">@dimen/content_button</item>
+        <item name="android:paddingBottom">@dimen/content_button</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="android:textSize">@dimen/text_input</item>
+        <item name="android:drawablePadding">@dimen/space_big</item>
+    </style>
+
+    <style name="Input.Text">
+        <item name="android:digits">@string/digit_input</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="Input.Name">
+        <item name="android:digits">@string/digit_name</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:maxLength">@integer/max_name</item>
+        <item name="android:drawablePadding">@dimen/space_big</item>
+    </style>
+
+    <style name="Input.Clock">
+        <item name="android:drawablePadding">@dimen/space_big</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="Input.Text.Primary">
+        <item name="android:digits">@string/digit_input</item>
+        <item name="android:inputType">text</item>
+        <item name="android:background">@drawable/bg_border</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+    </style>
+
+    <style name="Input.Phone">
+        <item name="android:digits">@string/digit_phone</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">@integer/max_phone</item>
+        <item name="android:hint">@string/hint_email</item>
+    </style>
+
+    <style name="Input.Password">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="Input.Email">
+        <item name="android:digits">@string/digit_email</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="Input.Nominal">
+        <item name="android:digits">@string/digit_nominal</item>
+        <item name="android:inputType">numberSigned</item>
+    </style>
+
+    <!--Label-->
+    <style name="Label">
+        <item name="android:padding">@dimen/space</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--Divider-->
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <!--ToggleButton-->
+    <style name="ToggleButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+</resources>

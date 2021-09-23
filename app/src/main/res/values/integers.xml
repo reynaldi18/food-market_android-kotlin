@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Min lengths -->
+    <integer name="min_phone">10</integer>
+    <integer name="min_password">6</integer>
+    <integer name="min_name">3</integer>
+
+    <!-- Max lengths -->
+    <integer name="max_name">32</integer>
+    <integer name="max_phone">15</integer>
+    <integer name="max_password">32</integer>
+
+    <integer name="max_qty">99</integer>
+    <integer name="grid_size">3</integer>
+</resources>
