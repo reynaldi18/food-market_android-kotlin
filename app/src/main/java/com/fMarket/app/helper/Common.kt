@@ -6,10 +6,16 @@ import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
 import android.view.Gravity
+import android.view.View
+import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.core.content.ContextCompat
 import com.fMarket.app.BuildConfig
 import com.fMarket.app.R
+import com.google.android.material.snackbar.BaseTransientBottomBar
+import com.google.android.material.snackbar.Snackbar
 
 /**
  * Created by Alvin Rusli on 1/24/2016.
@@ -113,5 +119,19 @@ object Common {
     fun showMessageDialog(context: Context?, message: String?) {
         if (context == null || message == null) return
         showMessageDialog(context = context, title = null, message = message)
+    }
+
+    fun showSnackBar(viewRes: View, stringRes: Int) {
+        showSnackBar(viewRes, getString(stringRes))
+    }
+
+    fun showSnackBar(view: View, message: String) {
+        val snackBar = Snackbar.make(view, message, Snackbar.LENGTH_SHORT)
+        val snackBarView = snackBar.view
+        val params = snackBarView.layoutParams as CoordinatorLayout.LayoutParams
+        snackBarView.setBackgroundColor(ContextCompat.getColor(getAppContext(), R.color.error))
+        params.gravity = Gravity.TOP
+        snackBar.animationMode = BaseTransientBottomBar.ANIMATION_MODE_FADE
+        snackBar.show()
     }
 }

@@ -2,7 +2,7 @@
 
     <!-- Min lengths -->
     <integer name="min_phone">10</integer>
-    <integer name="min_password">6</integer>
+    <integer name="min_password">8</integer>
     <integer name="min_name">3</integer>
 
     <!-- Max lengths -->

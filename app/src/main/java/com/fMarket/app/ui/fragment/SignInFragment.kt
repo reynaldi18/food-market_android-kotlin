@@ -10,6 +10,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.fMarket.app.R
 import com.fMarket.app.core.CoreFragment
 import com.fMarket.app.databinding.FragmentSignInBinding
+import com.fMarket.app.helper.Common
 import com.fMarket.app.ui.vm.SignInVm
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -33,8 +34,8 @@ internal class SignInFragment : CoreFragment() {
         val nav = view.findNavController()
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.signInFragment))
         bind.toolbar.setupWithNavController(nav, appBarConfiguration)
-        bind.bSignUp.setOnClickListener {
-            nav.navigate(R.id.action_signInFragment_to_signUpFragment)
-        }
+        bind.bSignUp.setOnClickListener { nav.navigate(R.id.action_signInFragment_to_signUpFragment) }
+        vm.showSnackBar.observe(viewLifecycleOwner) { Common.showSnackBar(bind.clMain, it) }
+        bind.bSignIn.setOnClickListener { vm.validate() }
     }
 }

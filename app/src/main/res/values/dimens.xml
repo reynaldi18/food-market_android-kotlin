@@ -47,6 +47,9 @@
 
     <dimen name="logo_app">@dimen/_96sdp</dimen>
     <dimen name="thumbnail_placeholder">48dp</dimen>
+    <dimen name="thumbnail_profile">@dimen/_106sdp</dimen>
+    <dimen name="thumbnail_profile_photo">@dimen/_86sdp</dimen>
+    <dimen name="thumbnail_profile_radius">@dimen/_53sdp</dimen>
     <dimen name="icon_boarding_width">164dp</dimen>
     <dimen name="icon_boarding_height">48dp</dimen>
     <dimen name="toolbar_height">@dimen/_104sdp</dimen>

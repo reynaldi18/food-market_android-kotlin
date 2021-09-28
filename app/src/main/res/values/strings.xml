@@ -31,13 +31,17 @@
     <string name="message_permission_image">Dibutuhkan permisi untuk mengambil gambar</string>
 
     <!--Error-->
-    <string name="error_empty_phone">Harap isi nomor handphone</string>
-    <string name="error_empty_location">Harap tentukan lokasi terlebih dahulu</string>
+    <string name="error_invalid_email">Harap isi email yang valid</string>
+    <string name="error_invalid_password">Harap isi password dengan minimal 8 karakter</string>
 
     <!--Hint-->
     <string name="hint_email">Type your email address</string>
     <string name="hint_password">Type your password</string>
     <string name="hint_full_name">Type your full name</string>
+    <string name="hint_phone">Type your phone number</string>
+    <string name="hint_address">Type your address</string>
+    <string name="hint_house">Type your house number</string>
+    <string name="hint_city">Select your city</string>
 
     <!--Actions-->
     <string name="action_next">Selanjutnya</string>
@@ -55,4 +59,8 @@
     <string name="label_email_address">Email Address</string>
     <string name="label_password">Password</string>
     <string name="label_full_name">Full Name</string>
+    <string name="label_phone">Phone No.</string>
+    <string name="label_address">Address</string>
+    <string name="label_house">House No.</string>
+    <string name="label_city">City</string>
 </resources>
