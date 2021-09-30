@@ -12,7 +12,7 @@
     <dimen name="content_landing">64dp</dimen>
     <dimen name="content_button">12dp</dimen>
     <dimen name="content_search">48dp</dimen>
-    <dimen name="space_small">4dp</dimen>
+    <dimen name="space_small">@dimen/_4sdp</dimen>
     <dimen name="space_big">12dp</dimen>
     <dimen name="button_radius">@dimen/_6sdp</dimen>
     <dimen name="card_radius">16dp</dimen>
@@ -46,7 +46,7 @@
     <dimen name="text_toolbar_subtitle">@dimen/_10sdp</dimen>
 
     <dimen name="logo_app">@dimen/_96sdp</dimen>
-    <dimen name="thumbnail_placeholder">48dp</dimen>
+    <dimen name="thumbnail_placeholder">@dimen/_46sdp</dimen>
     <dimen name="thumbnail_profile">@dimen/_106sdp</dimen>
     <dimen name="thumbnail_profile_photo">@dimen/_86sdp</dimen>
     <dimen name="thumbnail_profile_radius">@dimen/_53sdp</dimen>
@@ -54,4 +54,6 @@
     <dimen name="icon_boarding_height">48dp</dimen>
     <dimen name="toolbar_height">@dimen/_104sdp</dimen>
     <dimen name="space_input">@dimen/_104sdp</dimen>
+    <dimen name="card_product_width">@dimen/_196sdp</dimen>
+    <dimen name="card_product_height">@dimen/_206sdp</dimen>
 </resources>

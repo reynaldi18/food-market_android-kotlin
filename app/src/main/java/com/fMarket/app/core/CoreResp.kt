@@ -6,10 +6,8 @@ import com.google.gson.annotations.SerializedName
  * Created by MuhammadLucky on 14/05/2018.
  */
 open class CoreResp<T>(
-    @SerializedName("error")
-    val error: String? = null,
-    @SerializedName("error_description")
-    val errorDescription: String? = null,
+    @SerializedName("status")
+    val status: Boolean? = true,
     @SerializedName("message")
     val message: String? = null,
     @SerializedName("data")

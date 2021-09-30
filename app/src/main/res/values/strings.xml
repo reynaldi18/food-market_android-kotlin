@@ -56,6 +56,7 @@
     <string name="label_sign_up">Sign Up</string>
     <string name="label_sign_in_desc">Find your best ever meal</string>
     <string name="label_sign_up_desc">Register and eat</string>
+    <string name="label_dashboard_desc">Let’s get some foods</string>
     <string name="label_email_address">Email Address</string>
     <string name="label_password">Password</string>
     <string name="label_full_name">Full Name</string>
@@ -63,4 +64,7 @@
     <string name="label_address">Address</string>
     <string name="label_house">House No.</string>
     <string name="label_city">City</string>
+    <string name="label_new_product">New Taste</string>
+    <string name="label_popular_product">Popular</string>
+    <string name="label_recommended_product">Recommended</string>
 </resources>

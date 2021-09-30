@@ -16,6 +16,7 @@ open class CoreVm : ViewModel() {
     var showProgress = SingleLiveEvent<Boolean>()
     var showToast = SingleLiveEvent<String>()
     var showSnackBar = SingleLiveEvent<String>()
+    var showSnackBarError = SingleLiveEvent<String>()
 
     companion object {
         // View flipper displayed child

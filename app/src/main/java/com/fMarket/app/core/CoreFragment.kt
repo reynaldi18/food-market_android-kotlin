@@ -27,7 +27,7 @@ open class CoreFragment : Fragment() {
         FirebaseCrashlytics.getInstance().log(javaClass.simpleName)
     }
 
-    fun showProgress() = Common.showProgressDialog(context, R.string.message_please_wait, null)
+    fun showProgress() = Common.showProgressDialog(context, null)
     fun hideProgress() = Common.dismissProgressDialog()
 
     open fun setupToolbar(toolbar: Toolbar) {

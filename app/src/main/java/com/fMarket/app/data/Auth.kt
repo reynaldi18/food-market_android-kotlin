@@ -6,12 +6,12 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Auth(
-    @SerializedName("token_type")
+    @SerializedName("tokenType")
     val tokenType: String? = null,
-    @SerializedName("expires_in")
+    @SerializedName("expiresIn")
     val expiresIn: Long? = null,
-    @SerializedName("access_token")
+    @SerializedName("accessToken")
     val accessToken: String? = null,
-    @SerializedName("refresh_token")
+    @SerializedName("refreshToken")
     val refreshToken: String? = null,
 ) : CoreData()

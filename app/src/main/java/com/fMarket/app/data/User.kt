@@ -8,14 +8,16 @@ import kotlinx.android.parcel.Parcelize
 data class User(
     @SerializedName("id")
     val id: Int? = null,
-    @SerializedName("name")
-    val name: String? = null,
-    @SerializedName("phone_number")
-    val phoneNumber: String? = null,
+    @SerializedName("photo")
+    val photo: String? = null,
     @SerializedName("email")
     val email: String? = null,
-    @SerializedName("phone_number_verified_at")
-    val phoneNumberVerifiedAt: String? = null,
-    @SerializedName("role")
-    var role: String? = null,
+    @SerializedName("phone")
+    val phone: String? = null,
+    @SerializedName("address")
+    var address: String? = null,
+    @SerializedName("houseNumber")
+    var houseNumber: String? = null,
+    @SerializedName("city")
+    var city: String? = null,
 ) : CoreData() {}

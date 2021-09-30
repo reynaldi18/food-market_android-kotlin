@@ -34,8 +34,14 @@ internal class SignInFragment : CoreFragment() {
         val nav = view.findNavController()
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.signInFragment))
         bind.toolbar.setupWithNavController(nav, appBarConfiguration)
+        vm.showProgress.observe(viewLifecycleOwner) {
+            if (it) Common.showProgressDialog(context = requireContext())
+            else Common.dismissProgressDialog()
+        }
         bind.bSignUp.setOnClickListener { nav.navigate(R.id.action_signInFragment_to_signUpFragment) }
         vm.showSnackBar.observe(viewLifecycleOwner) { Common.showSnackBar(bind.clMain, it) }
+        vm.onFailed.observe(viewLifecycleOwner) { Common.showSnackBarError(bind.clMain, it) }
+        vm.onSuccess.observe(viewLifecycleOwner) { nav.navigate(R.id.action_signInFragment_to_dashboardFragment) }
         bind.bSignIn.setOnClickListener { vm.validate() }
     }
 }

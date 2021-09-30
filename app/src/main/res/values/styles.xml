@@ -136,6 +136,7 @@
     <style name="Text.Toolbar.Subtitle">
         <item name="android:textSize">@dimen/text_toolbar_subtitle</item>
         <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray</item>
     </style>
 
     <!-- Input-->

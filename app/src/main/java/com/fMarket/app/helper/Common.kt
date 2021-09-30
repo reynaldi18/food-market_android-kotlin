@@ -7,7 +7,6 @@ import android.content.Context
 import android.content.DialogInterface
 import android.view.Gravity
 import android.view.View
-import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -31,19 +30,16 @@ object Common {
     /**
      * Shows a loading progress dialog.
      * @param context the context
-     * @param stringRes the dialog message string resource id
      * @param onBackPressListener the back button press listener when loading is shown
      */
     fun showProgressDialog(
         context: Context?,
-        stringRes: Int = R.string.message_please_wait,
         onBackPressListener: ProgressDialog.OnBackPressListener? = null,
         cancelable: Boolean? = false
     ) {
         dismissProgressDialog()
         if (context == null) return
         progressDialog = ProgressDialog(context)
-        progressDialog!!.setText(stringRes)
         if (cancelable != null)
             progressDialog!!.setCancelable(cancelable)
         progressDialog!!.backPressListener = onBackPressListener
@@ -121,15 +117,24 @@ object Common {
         showMessageDialog(context = context, title = null, message = message)
     }
 
-    fun showSnackBar(viewRes: View, stringRes: Int) {
-        showSnackBar(viewRes, getString(stringRes))
+    fun showSnackBarError(viewRes: View, stringRes: Int) {
+        showSnackBarError(viewRes, getString(stringRes))
+    }
+
+    fun showSnackBarError(view: View, message: String) {
+        val snackBar = Snackbar.make(view, message, Snackbar.LENGTH_SHORT)
+        val snackBarView = snackBar.view
+        val params = snackBarView.layoutParams as CoordinatorLayout.LayoutParams
+        snackBarView.setBackgroundColor(ContextCompat.getColor(getAppContext(), R.color.error))
+        params.gravity = Gravity.TOP
+        snackBar.animationMode = BaseTransientBottomBar.ANIMATION_MODE_FADE
+        snackBar.show()
     }
 
     fun showSnackBar(view: View, message: String) {
         val snackBar = Snackbar.make(view, message, Snackbar.LENGTH_SHORT)
         val snackBarView = snackBar.view
         val params = snackBarView.layoutParams as CoordinatorLayout.LayoutParams
-        snackBarView.setBackgroundColor(ContextCompat.getColor(getAppContext(), R.color.error))
         params.gravity = Gravity.TOP
         snackBar.animationMode = BaseTransientBottomBar.ANIMATION_MODE_FADE
         snackBar.show()
