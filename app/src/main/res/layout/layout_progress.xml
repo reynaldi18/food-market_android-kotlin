@@ -18,13 +18,5 @@
             android:indeterminate="true"
             android:indeterminateTint="@color/colorPrimary"
             android:progressTint="@color/colorPrimary" />
-
-        <TextView
-            android:id="@+id/tv_please_wait"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/message_please_wait"
-            android:textColor="@color/colorPrimary" />
     </LinearLayout>
 </layout>

@@ -31,8 +31,13 @@
     <string name="message_permission_image">Dibutuhkan permisi untuk mengambil gambar</string>
 
     <!--Error-->
-    <string name="error_invalid_email">Harap isi email yang valid</string>
-    <string name="error_invalid_password">Harap isi password dengan minimal 8 karakter</string>
+    <string name="error_invalid_name">Please fill in a valid name</string>
+    <string name="error_invalid_email">Please fill in a valid email</string>
+    <string name="error_invalid_password">Please fill in the password with a minimum of 8 characters</string>
+    <string name="error_invalid_phone">Please fill in a valid phone number</string>
+    <string name="error_required_address">Address is required</string>
+    <string name="error_required_house_number">House Number is required</string>
+    <string name="error_required_city">City is required</string>
 
     <!--Hint-->
     <string name="hint_email">Type your email address</string>

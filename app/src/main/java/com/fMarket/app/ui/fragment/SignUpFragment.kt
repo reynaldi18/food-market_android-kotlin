@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import com.fMarket.app.R
 import com.fMarket.app.core.CoreFragment
 import com.fMarket.app.databinding.FragmentSignUpBinding
+import com.fMarket.app.helper.Common
 import com.fMarket.app.ui.vm.SignUpVm
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -28,5 +30,13 @@ internal class SignUpFragment : CoreFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val nav = view.findNavController()
+        vm.showProgress.observe(viewLifecycleOwner) {
+            if (it) Common.showProgressDialog(context = requireContext())
+            else Common.dismissProgressDialog()
+        }
+        vm.showSnackBar.observe(viewLifecycleOwner) { Common.showSnackBar(bind.clMain, it) }
+        vm.onFailed.observe(viewLifecycleOwner) { Common.showSnackBarError(bind.clMain, it) }
+//        vm.onSuccess.observe(viewLifecycleOwner) { nav.navigate(R.id.action_signInFragment_to_dashboardFragment) }
+        bind.bSignUp.setOnClickListener { vm.validate() }
     }
 }

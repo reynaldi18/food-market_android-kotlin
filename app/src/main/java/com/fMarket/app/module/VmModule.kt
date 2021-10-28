@@ -13,13 +13,13 @@ import org.koin.dsl.module
 
 object VmModule {
     val vmodelModule = module {
-        viewModel { SplashVm()}
+        viewModel { SplashVm(get())}
         viewModel { SignInVm(get()) }
-        viewModel { SignUpVm() }
+        viewModel { SignUpVm(get()) }
         viewModel { MainVm() }
-        viewModel { HomeVm() }
+        viewModel { HomeVm(get(), get()) }
         viewModel { OrderVm() }
         viewModel { ProfileVm() }
-        viewModel { ProductListVm() }
+        viewModel { ProductListVm(get()) }
     }
 }

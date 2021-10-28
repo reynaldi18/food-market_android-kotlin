@@ -8,6 +8,8 @@ import kotlinx.android.parcel.Parcelize
 data class User(
     @SerializedName("id")
     val id: Int? = null,
+    @SerializedName("name")
+    val name: String? = null,
     @SerializedName("photo")
     val photo: String? = null,
     @SerializedName("email")

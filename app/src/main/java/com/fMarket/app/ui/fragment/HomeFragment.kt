@@ -9,10 +9,9 @@ import androidx.viewpager.widget.ViewPager
 import com.fMarket.app.R
 import com.fMarket.app.adapter.ViewPagerAdapter
 import com.fMarket.app.core.CoreFragment
+import com.fMarket.app.data.Product
 import com.fMarket.app.databinding.FragmentHomeBinding
-import com.fMarket.app.databinding.FragmentSignUpBinding
 import com.fMarket.app.ui.vm.HomeVm
-import com.fMarket.app.ui.vm.SignUpVm
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 internal class HomeFragment : CoreFragment() {
@@ -42,8 +41,11 @@ internal class HomeFragment : CoreFragment() {
 
     private fun initTab() {
         productsNewFragment = ProductListFragment()
+        productsNewFragment.status = Product.STATUS_NEW
         productsPopularFragment = ProductListFragment()
+        productsPopularFragment.status = Product.STATUS_POPULAR
         productsRecommendedFragment = ProductListFragment()
+        productsRecommendedFragment.status = Product.STATUS_RECOMMENDED
 
         adapter = ViewPagerAdapter(childFragmentManager)
         adapter.addFragment(productsNewFragment, getString(R.string.label_new_product))

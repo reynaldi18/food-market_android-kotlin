@@ -4,6 +4,7 @@ import android.util.Log
 import com.fMarket.app.api.ApiService
 import com.fMarket.app.api.Resource
 import com.fMarket.app.api.request.SignInReq
+import com.fMarket.app.api.request.SignUpReq
 import com.fMarket.app.constant.Session
 import com.fMarket.app.core.CoreRepo
 import com.fMarket.app.data.Auth
@@ -33,12 +34,32 @@ class UserRepo(val api: ApiService, val session: SessionStorage) : CoreRepo() {
         Resource.Error(getErrorMessage(e))
     }
 
+    suspend fun signUp(
+        photo: String,
+        name: String,
+        email: String,
+        password: String,
+        phone: String,
+        address: String,
+        houseNumber: String,
+        city: String,
+    ): Resource<Any> = try {
+        val res =
+            api.signUp(SignUpReq(photo, name, email, password, phone, address, houseNumber, city))
+        if (res.isSuccess()) {
+            val data = res.body()
+            Resource.Success(data)
+        } else Resource.Error(getErrorMessage(res))
+    } catch (e: IOException) {
+        Resource.Error(getErrorMessage(e))
+    }
+
     private suspend fun fetchUser(): Resource<User> = try {
         val res = api.getProfile()
         if (res.isSuccess()) {
             val data = res.body()?.data
             saveUser(data)
-            Resource.Success()
+            Resource.Success(data)
         } else Resource.Error(getErrorMessage(res))
     } catch (e: IOException) {
         Resource.Error(getErrorMessage(e))
