@@ -9,15 +9,15 @@
 
         <import
             alias="ch"
-            type="com.fMarket.app.helper.CurrencyHelper" />
+            type="com.movieApp.app.helper.CurrencyHelper" />
 
         <variable
             name="data"
-            type="com.fMarket.app.data.Product" />
+            type="com.movieApp.app.data.Product" />
 
         <variable
             name="handler"
-            type="com.fMarket.app.core.CoreListAdapter.Holder" />
+            type="com.movieApp.app.core.CoreListAdapter.Holder" />
 
         <variable
             name="position"

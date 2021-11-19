@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.fMarket.app">
+    package="com.movieApp.app">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name="com.fMarket.app.App"
+        android:name="com.movieApp.app.App"
         android:allowBackup="true"
         android:fullBackupContent="@xml/my_backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -55,30 +55,17 @@
             android:resource="@drawable/ic_logo_white" />-->
 
         <activity
-            android:name="com.fMarket.app.MainActivity"
+            android:name="com.movieApp.app.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleInstance"
             android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
 
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="foodmarket.com"
-                    android:scheme="https" />
-                <data
-                    android:host="167.172.28.124"
-                    android:port="90"
-                    android:scheme="http" />
             </intent-filter>
         </activity>
         <!--<service

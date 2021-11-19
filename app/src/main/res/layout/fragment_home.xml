@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.fMarket.app.ui.vm.HomeVm" />
+            type="com.movieApp.app.ui.vm.HomeVm" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

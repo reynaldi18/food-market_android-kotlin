@@ -6,7 +6,7 @@
     app:startDestination="@id/splashFragment">
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.fMarket.app.ui.fragment.SplashFragment"
+        android:name="com.movieApp.app.ui.fragment.SplashFragment"
         android:label="SplashFragment"
         tools:layout="@layout/fragment_splash">
         <action
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.fMarket.app.ui.fragment.SignInFragment"
+        android:name="com.movieApp.app.ui.fragment.SignInFragment"
         android:label="SignInFragment"
         tools:layout="@layout/fragment_sign_in">
         <action
@@ -37,12 +37,12 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.fMarket.app.ui.fragment.SignUpFragment"
+        android:name="com.movieApp.app.ui.fragment.SignUpFragment"
         android:label="SignUpFragment"
         tools:layout="@layout/fragment_sign_up" />
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.fMarket.app.ui.fragment.DashboardFragment"
+        android:name="com.movieApp.app.ui.fragment.DashboardFragment"
         android:label="DashboardFragment"
         tools:layout="@layout/fragment_main" />
 </navigation>

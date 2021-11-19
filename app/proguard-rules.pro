@@ -21,8 +21,8 @@
 #-renamesourcefileattribute SourceFile
 
 -keepnames class android.arch.lifecycle.ViewModel
--keepnames class com.fMarket.app.listener.OnDataSetListener
--keepnames class com.fMarket.app.listener.OnDismissListener
+-keepnames class com.movieApp.app.listener.OnDataSetListener
+-keepnames class com.movieApp.app.listener.OnDismissListener
 -keepclassmembers public class * extends android.arch.lifecycle.ViewModel { public <init>(...); }
 -keepclassmembers class com.lebao.app.domain.** { public <init>(...); }
 -keepclassmembers class * { public <init>(...); }
@@ -38,7 +38,7 @@ public static java.lang.String TABLENAME;
 #-dontwarn net.sqlcipher.database.**
 # If you do NOT use RxJava:
 -dontwarn rx.**
--keep class com.fMarket.app.data.local.entity.* {*;}
+-keep class com.movieApp.app.data.local.entity.* {*;}
 
 -keep class net.sqlcipher.** { *; }
 -keep class net.sqlcipher.database.* { *; }
@@ -84,8 +84,8 @@ public static java.lang.String TABLENAME;
    long consumerNode;
 }
 # ALSO REMEMBER KEEPING YOUR MODEL CLASSES
--keep class com.fMarket.app.core.** { *; }
--keep class com.fMarket.app.data.** { *; }
+-keep class com.movieApp.app.core.** { *; }
+-keep class com.movieApp.app.data.** { *; }
 
 # Dexter
 -renamesourcefileattribute SourceFile

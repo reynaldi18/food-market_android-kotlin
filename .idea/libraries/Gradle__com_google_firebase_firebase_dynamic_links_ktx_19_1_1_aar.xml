@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-dynamic-links-ktx:19.1.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d5ddf1edccb53ccc6117b21d0a7a33e9/transformed/jetified-firebase-dynamic-links-ktx-19.1.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d5ddf1edccb53ccc6117b21d0a7a33e9/transformed/jetified-firebase-dynamic-links-ktx-19.1.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d5ddf1edccb53ccc6117b21d0a7a33e9/transformed/jetified-firebase-dynamic-links-ktx-19.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e868dead3904c0cdd17baf77122d3cab/transformed/jetified-firebase-dynamic-links-ktx-19.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e868dead3904c0cdd17baf77122d3cab/transformed/jetified-firebase-dynamic-links-ktx-19.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e868dead3904c0cdd17baf77122d3cab/transformed/jetified-firebase-dynamic-links-ktx-19.1.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-dynamic-links-ktx/19.1.1/ba2b9b1205c78abd9d5661bcbfa160c12c792767/firebase-dynamic-links-ktx-19.1.1-javadoc.jar!/" />

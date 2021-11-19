@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.fMarket.app.ui.vm.SignUpVm" />
+            type="com.movieApp.app.ui.vm.SignUpVm" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
