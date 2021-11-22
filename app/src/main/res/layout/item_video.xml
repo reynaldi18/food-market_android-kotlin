@@ -13,7 +13,7 @@
 
         <variable
             name="data"
-            type="com.movieApp.app.data.Product" />
+            type="com.movieApp.app.data.Video" />
 
         <variable
             name="handler"
@@ -27,64 +27,44 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_detail"
         style="@style/Clickable"
-        android:layout_width="@dimen/card_product_width"
-        android:layout_height="@dimen/card_product_height"
-        android:layout_marginEnd="@dimen/content_padding"
-        android:onClick="@{(v) -> handler.onClick(v, position)}"
+        android:layout_width="@dimen/_104sdp"
+        android:layout_height="@dimen/_72sdp"
+        android:layout_marginEnd="@dimen/content"
         app:cardCornerRadius="@dimen/card_radius_small">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:onClick="@{(v) -> handler.onClick(v, position)}"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                app:cardBackgroundColor="@color/gray"
                 app:cardElevation="0dp">
 
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
                     android:layout_gravity="center"
                     android:scaleType="fitXY"
-                    app:srcUrl="@{data.photo}"
+                    android:src="@drawable/ic_play_button"
                     tools:srcCompat="@tools:sample/avatars"/>
             </androidx.cardview.widget.CardView>
 
             <TextView
-                style="@style/Text.Label"
+                style="@style/Text.Subtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/content_small"
                 android:layout_marginTop="@dimen/content_small"
+                android:layout_marginBottom="@dimen/content_small"
+                android:maxLines="1"
                 android:text="@{data.name}" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/content_small"
-                android:orientation="horizontal">
-
-                <androidx.appcompat.widget.AppCompatRatingBar
-                    android:id="@+id/rb_rating"
-                    style="?android:attr/ratingBarStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:rating="@{data.rate}"
-                    android:numStars="5"
-                    android:stepSize="0.1" />
-
-                <TextView
-                    style="@style/Text.Subtitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/space_small"
-                    android:textColor="@color/gray"
-                    android:text="@{data.rate.toString()}" />
-            </LinearLayout>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 </layout>

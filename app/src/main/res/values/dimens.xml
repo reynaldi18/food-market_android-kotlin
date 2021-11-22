@@ -54,7 +54,6 @@
     <dimen name="icon_boarding_height">48dp</dimen>
     <dimen name="toolbar_height">@dimen/_104sdp</dimen>
     <dimen name="space_input">@dimen/_104sdp</dimen>
-    <dimen name="card_product_width">@dimen/_186sdp</dimen>
-    <dimen name="card_product_height">@dimen/_196sdp</dimen>
+    <dimen name="card_movie_height">@dimen/_212sdp</dimen>
     <dimen name="image_product">@dimen/_56sdp</dimen>
 </resources>

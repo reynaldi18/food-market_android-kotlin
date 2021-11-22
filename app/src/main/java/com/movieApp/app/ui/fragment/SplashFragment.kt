@@ -29,11 +29,8 @@ internal class SplashFragment : CoreFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val nav = view.findNavController()
-        vm.showSignIn.observe(viewLifecycleOwner) {
-            nav.navigate(R.id.action_splashFragment_to_signInFragment)
-        }
-        vm.showDashboard.observe(viewLifecycleOwner) {
-            nav.navigate(R.id.action_splashFragment_to_dashboardFragment)
+        vm.showHome.observe(viewLifecycleOwner) {
+            nav.navigate(R.id.action_splashFragment_to_homeFragment)
         }
     }
 }

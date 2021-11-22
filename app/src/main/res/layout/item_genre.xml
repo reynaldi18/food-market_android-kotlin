@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import
+            alias="ch"
+            type="com.movieApp.app.helper.CurrencyHelper" />
+
+        <variable
+            name="data"
+            type="com.movieApp.app.data.Genre" />
+
+        <variable
+            name="handler"
+            type="com.movieApp.app.core.CoreListAdapter.Holder" />
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/Text.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_small"
+        android:text="@{data.name}"/>
+
+</layout>

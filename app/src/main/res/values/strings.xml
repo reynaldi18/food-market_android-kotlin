@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">MovieApp</string>
     <string name="channel_id">movieAppChannel</string>
     <string name="channel_name">General</string>
@@ -72,4 +72,8 @@
     <string name="label_new_product">New Taste</string>
     <string name="label_popular_product">Popular</string>
     <string name="label_recommended_product">Recommended</string>
+    <string name="labelMovieInformation">Movie Information</string>
+    <string name="labelSynopsis">Synopsis</string>
+    <string name="labelVideos">Videos</string>
+    <string name="labelReviews">Reviews</string>
 </resources>
